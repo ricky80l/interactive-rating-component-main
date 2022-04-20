@@ -1,0 +1,171 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Overpass', sans-serif;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.flexy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.round {
+    border-radius: 100%;
+    background-color: hsl(216, 12%, 54%);
+}
+
+.selected {
+    color: hsl(0, 0%, 100%) !important;
+    background-color: hsl(25, 97%, 53%) !important;
+}
+
+body {
+    height: 100vh;
+}
+
+
+/* MAIN */
+
+main {
+    font-size: 0.9375rem;
+    max-width: 90rem;
+    padding: 7% 25%;
+    background-color: hsl(216, 12%, 8%);
+    overflow-x: hidden !important;
+}
+
+.container {
+    width: 19rem;
+    min-height: 19rem;
+    border-radius: 2rem;
+    background-color: #1a212b;
+    padding: 2rem;
+}
+
+
+/* RATINGS SECTION */
+
+.star {
+    margin-bottom: 1.2rem;
+}
+
+.title,
+.bottone {
+    color: hsl(0, 0%, 100%);
+}
+
+.title {
+    margin-bottom: 0.8rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.description,
+.vote {
+    color: hsl(217, 12%, 63%);
+}
+
+.sub-cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 2rem 0;
+}
+
+.vote,
+.star {
+    padding: 0.8rem;
+    text-align: center;
+    background-color: #262f38;
+}
+
+.vote {
+    width: 1.2rem;
+    height: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
+
+.vote:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%);
+}
+
+.bottone {
+    display: block;
+    text-align: center;
+    height: 2.8rem;
+    line-height: 3rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    background-color: hsl(25, 97%, 53%);
+    text-transform: uppercase;
+}
+
+.bottone:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+
+/* RESULTS SECTION */
+
+#results {
+    display: none;
+    text-align: center;
+}
+
+.point {
+    color: hsl(25, 97%, 53%);
+    display: block;
+    border-radius: 3rem;
+    height: 0.6rem;
+    line-height: 0.9rem;
+    width: 12rem;
+    margin: 1.4rem auto;
+}
+
+
+/* FOOOTER */
+
+.attribution {
+    font-size: 0.7875rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.attribution a {
+    font-size: 0.9rem;
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width:750px) {
+    main {
+        padding: 9% 20%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    main {
+        padding: 13% 16%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    main {
+        padding: 30% 10%;
+    }
+}
